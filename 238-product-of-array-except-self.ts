@@ -2,7 +2,6 @@ function productExceptSelf(nums: number[]): number[] {
   const n: number = nums.length;
   const track: number[] = new Array(n).fill(1);
 
-  // Accumulate left product
   let prefix = 1,
     suffix = 1;
   for (let index = 0; index < n; index++) {
